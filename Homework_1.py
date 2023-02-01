@@ -83,7 +83,7 @@ choco_length = int(input('Введите длину шоколадки: '))
 choco_width = int(input('Введите ширину шоколадки: '))
 need_parts = int(input('Укажите, сколько долек нужно отломить: '))
 
-if need_parts % choco_length == 0 or need_parts % choco_width == 0:
+if need_parts <= choco_width * choco_length and (need_parts % choco_length == 0 or need_parts % choco_width == 0):
     print('YES')
 else:
     print('NO')
